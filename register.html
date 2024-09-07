@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+    
+    <style>
+    @media screen and (max-width:1500px) and (min-width:1000px) {
+        
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 750px;
+	width: 100%;
+	background-image: url(background\ box.jpeg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+    margin-left: 100px;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    display: none;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: yellow;
+    font-size: 28px;
+}
+#LoginBox{
+            width: 700px;
+            height: 600px;
+            border-radius: 30px;
+            border:4px solid black;
+            margin-left: 300px;
+            text-align: center;
+            animation: changeColor 6s linear infinite;
+            background-image: conic-gradient(transparent);
+            background-color: aqua;
+        }
+        @keyframes changeColor{
+            0%{
+                border-color: rgb(4, 4, 100);
+            }
+            50%{
+                border-color: blueviolet;
+            }
+            100%{
+                border-color: lightskyblue;
+            }
+        }
+        #SignUp{
+            width: 500px;
+            height: 480px;
+           text-align: center; 
+           margin-top:50px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+           margin-left: 100px;
+        }
+       .right{
+            display: flex;
+            margin-left: 50px;
+            height: 75px;
+        }
+        .right2{
+            display:flex;
+            margin-left: 50px;
+            height: 70px;
+        }
+        .right3{
+            margin-left: 30px;
+            height: 70px;
+        }
+        .right4{
+            margin-left: 50px;
+            height: 70px;
+        }
+        #checkbox{
+         margin-right: 40px;
+          margin-top: 60px;
+        }
+        .right3 input{
+            margin-right:10px;
+        }
+       .password{
+            margin: 20px;
+            display: flex;
+            width: 300px;
+        }
+        .email{
+            margin: 20px;
+            display: flex;
+            width: 300px;
+        }
+        .inputemail{
+            border-radius: 30px;
+            height: 50px;
+            margin-left: 30px;
+            width: 300px;     
+        }
+        .inputemail input{
+            width:300px;
+            height: 70px;
+            border:2px solid red;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .inputpassword{
+            border-radius: 30px;
+            width: 300px;
+            height: 50px;
+            margin-left: 30px;
+        }
+        .inputpassword input{
+            width:300px;
+            height: 70px;
+            border:2px solid red;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .comfirmpassword{
+            margin: 20px;
+            display: flex;
+            width: 300px;
+        }
+        .inputcomfirmpassword{
+            border-radius: 30px;
+            height: 50px;
+            margin-left: 30px;
+            width: 300px;      
+        }
+        .inputcomfirmpassword input{
+            width:300px;
+            height: 70px;
+            border:2px solid red;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .mybutton{
+        background-color: #f9004d;
+        color:black;
+        text-decoration: none;
+        border:2px solid transparent;
+        font-weight: bold;
+        padding:9px 30px;
+        border-radius:30px;
+        transition: .4s;
+        margin: 70px;
+		margin-right: 100px;
+        margin-top: 10px;
+    }
+    .mybutton:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    }
+}
+    @media screen and (max-width:600px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 650px;
+	width: 100%;
+	background-image: url(background\ box.jpeg);
+	background-position: center;
+	background-size: cover;
+    overflow: hidden;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 20px;
+
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 0px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    display: none;
+}
+nav ul li button
+{
+    font-size: 18px;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+    margin-right: 60px;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: yellow;
+    font-size: 20px;
+}
+#LoginBox{
+            width: 400px;
+            height: 420px;
+            border-radius: 30px;
+            border:4px solid black;
+            margin-left: 40px;
+            align-items: center;
+            text-align: center;
+            animation: changeColor 6s linear infinite;
+            background-image: conic-gradient(transparent);
+            background-color: aqua;
+            margin-top: 60px;
+        }
+        @keyframes changeColor{
+            0%{
+                border-color: rgb(4, 4, 100);
+            }
+            50%{
+                border-color: blueviolet;
+            }
+            100%{
+                border-color: lightskyblue;
+            }
+        }
+        #SignUp{
+            width: 500px;
+            height: 450px;
+           text-align: center; 
+           margin-top:10px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           margin-left: -50px;
+          
+        }
+       .right{
+            display: flex;
+           margin-left: 50px;
+            height: 75px;
+        }
+        .right2{
+            display:flex;
+            margin-left: 50px;
+            height: 70px;
+        }
+        .right4{
+            margin-left: 50px;
+            height: 70px;
+        }
+        #checkbox{
+         margin-left: 10px;
+          margin-top: -30px;
+        }
+        .right3 input{
+            margin-right:10px;
+        }
+       .password{
+            margin: 20px;
+            display: flex;
+            width: 300px;
+        }
+        .email{
+            margin: 20px;
+            display: flex;
+            width: 300px;
+        }
+        .inputemail{
+            border-radius: 30px;
+            height: 50px;
+            margin-left: 30px;
+            width: 300px;     
+        }
+        .inputemail input{
+            width:300px;
+            height: 50px;
+            border:2px solid red;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 10px;
+           margin-left: 5px;
+        }
+        .inputpassword{
+            border-radius: 30px;
+            width: 300px;
+            height: 50px;
+            margin-left: 30px;
+        }
+        .inputpassword input{
+            width:300px;
+            height: 50px;
+            border:2px solid red;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: -8px;
+            margin-left: 5px;
+        }
+        .comfirmpassword{
+            margin: 20px;
+            display: flex;
+            width: 300px;
+        }
+        .inputcomfirmpassword{
+            border-radius: 30px;
+            height: 50px;
+            margin-left: 30px;
+            width: 300px;      
+        }
+        .inputcomfirmpassword input{
+            width:300px;
+            height: 50px;
+            border:2px solid red;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: -100px;
+            margin-left: 5px;
+        }
+        .mybutton{
+        background-color: #f9004d;
+        color:black;
+        text-decoration: none;
+        border:2px solid transparent;
+        font-weight: bold;
+        padding:9px 20px;
+        border-radius:30px;
+        transition: .4s;
+        margin: 80px;
+		margin-right: 100px;
+            margin-top: 30px;
+        }
+    .mybutton:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    }
+    }
+    @media screen and (max-width:1000px) and (min-width:700px) {
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 750px;
+	width: 100%;
+	background-image: url(background\ box.jpeg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+    margin-left: 100px;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    display: none;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: yellow;
+    font-size: 28px;
+}
+#LoginBox{
+            width: 700px;
+            height: 600px;
+            border-radius: 30px;
+            border:4px solid black;
+            margin-left: 150px;
+            text-align: center;
+            animation: changeColor 6s linear infinite;
+            background-image: conic-gradient(transparent);
+            background-color: aqua;
+        }
+        @keyframes changeColor{
+            0%{
+                border-color: rgb(4, 4, 100);
+            }
+            50%{
+                border-color: blueviolet;
+            }
+            100%{
+                border-color: lightskyblue;
+            }
+        }
+        #SignUp{
+            width: 500px;
+            height: 480px;
+           text-align: center; 
+           margin-top:50px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+           margin-left: 100px;
+        }
+       .right{
+            display: flex;
+            margin-left: 50px;
+            height: 75px;
+        }
+        .right2{
+            display:flex;
+            margin-left: 50px;
+            height: 70px;
+        }
+        .right3{
+            margin-left: 30px;
+            height: 70px;
+        }
+        .right4{
+            margin-left: 50px;
+            height: 70px;
+        }
+        #checkbox{
+         margin-right: 40px;
+          margin-top: 60px;
+        }
+        .right3 input{
+            margin-right:10px;
+        }
+       .password{
+            margin: 20px;
+            display: flex;
+            width: 300px;
+        }
+        .email{
+            margin: 20px;
+            display: flex;
+            width: 300px;
+        }
+        .inputemail{
+            border-radius: 30px;
+            height: 50px;
+            margin-left: 30px;
+            width: 300px;     
+        }
+        .inputemail input{
+            width:300px;
+            height: 70px;
+            border:2px solid red;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .inputpassword{
+            border-radius: 30px;
+            width: 300px;
+            height: 50px;
+            margin-left: 30px;
+        }
+        .inputpassword input{
+            width:300px;
+            height: 70px;
+            border:2px solid red;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .comfirmpassword{
+            margin: 20px;
+            display: flex;
+            width: 300px;
+        }
+        .inputcomfirmpassword{
+            border-radius: 30px;
+            height: 50px;
+            margin-left: 30px;
+            width: 300px;      
+        }
+        .inputcomfirmpassword input{
+            width:300px;
+            height: 70px;
+            border:2px solid red;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .mybutton{
+        background-color: #f9004d;
+        color:black;
+        text-decoration: none;
+        border:2px solid transparent;
+        font-weight: bold;
+        padding:9px 30px;
+        border-radius:30px;
+        transition: .4s;
+        margin: 70px;
+		margin-right: 100px;
+        margin-top: 10px;
+    }
+    .mybutton:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    }
+}
+    </style>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href=''>SUPERSTAR CINEMA</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Movie</a></li>
+                    <li><a href='#'>Foods</a></li>
+                    <li><a href='#'>Shops</a></li>
+                    <li><a href='#'>Events</a></li>
+                </ul>
+            </nav>
+        </div>
+		
+    <div id="LoginBox">
+        <div id="SignUp">
+            <h1> SIGNUP HERE </h1>
+            
+            <div class="email">
+                    
+                <div class="right">
+                    <div class="inputemail">
+                            <input type="text" placeholder="Enter your email" value=""><br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="password">
+                <div class="right2">
+                    <div class="inputpassword">
+                            <input type="text" placeholder="Enter your password" value=""><br>
+                    </div>
+                </div>
+            </div>
+            <div class="comfirmpassword">
+                <div class="right4">
+                    <div class="inputcomfirmpassword">
+                            <input type="text" placeholder="Double comfirm password" value=""><br>
+                    </div>
+                </div>
+            </div>
+            <div id="checkbox">
+                <div class="right3">
+                    <input type="checkbox" name="hobby1" value="Terms"> I already acepect all the condition and terms.
+                </div>    
+            </div>
+            <button class="mybutton">
+                    <a href="adv login.html">Register</a>
+            </button>
+        
+        </div>
+    </div>
+</div>
+</body>
+</html>

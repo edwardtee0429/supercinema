@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies - Now Showing - Platinum Screen Cinema</title>
+        <script src="https://kit.fontawesome.com/cd7ede7e7d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="">
+    </head>
+
+    <style>
+        @media screen and (max-width:540px) {
+            html{
+                background-image: url(wallpaperflare.com_wallpaper.jpg);
+            }
+            #nav1{
+                text-decoration: none;
+                display: block;
+                position: sticky;
+                top: 0;
+                background: rgba(43, 84, 82, 0.9);
+                padding: 6px;
+                justify-content: space-between;
+            }
+            .navigation{
+                display: flex;
+                justify-content: space-between;
+            }
+            .cinemalogo{
+                padding-left: 20px;
+                font-size: 21px;
+                text-shadow: 2px 2px 5px rgb(2, 188, 255), 1px 1px 20px rgb(112, 253, 255), 1px 1px 3px rgb(247, 8, 8);
+                color: rgb(255, 242, 0);
+            }
+            .dropdownbtn{
+                background-color: black;
+                border: 3px solid gold;
+                color: goldenrod;
+                margin-left: 10px;
+                padding: 15px;
+                font-size: 20px;
+                border-radius: 18px;
+            }
+            .allnavbutton{
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .allnavbutton a{
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .allnavbutton a:hover {background: rgba(66,54, 43,.9);}
+
+            .dropdownbar:hover .allnavbutton {display: block;}
+
+            .dropdownbar:hover .dropdownbtn {background: transparent;}
+
+            .loginsignup{
+                font-size: 20px;
+                font-weight: bolder;
+                padding-left: 350px; 
+            }
+            .loginsignup :hover{
+                background: transparent;
+            }
+            .loginsignup button{
+                background-color: black;
+                border: 3px solid gold;
+                border-radius: 18px;
+                color: goldenrod;
+                width: 150px;
+                height: 50px;
+                margin-left: -70%;
+                text-decoration: none;
+                font-style: normal;
+                font-size: 15px;
+            }
+
+
+            #movie_list{
+                padding: 2px;
+                margin-top: 10px;
+                background: rgba(43, 84, 82, 0.9);
+            }
+            .moviebox_phone{
+                display: flex;
+            }
+            .overlay1 {
+                position: absolute;
+                top: 74.5%;
+                left: 25.9%;
+                height: 350px;
+                width: 220px;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #ecf3f5;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                border-radius: 12px;
+            }
+            .overlay1 h3{
+                margin-top: 20px;
+                padding: 5px;
+            }
+            .overlay1 p{
+                margin: 5px;
+                padding: 10px;
+            }
+            .moviebox:hover .overlay1{
+                opacity: 1;
+                background: rgba(0, 0, 0, 0.5);
+            }
+            .moviebox img{
+                margin: 5px;
+                width: 220px;
+                height: 350px;
+                border-radius: 12px;
+            }
+
+
+            #footer{
+                border: 1px solid white;
+                margin-top: 30px;
+                padding: 10px;
+                color: white;
+                background-color: black;
+            }
+            
+            .footerfirst{
+                flex-direction: column;
+            }
+            .xtranavbar a{
+                margin: 10px;
+                display: block;
+                color: goldenrod;
+                text-decoration: none;
+            }
+            .address{
+                font-size: 14px;
+            }
+            .apps i{
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            .ads img{
+                height: 200px;
+            }
+            .medias i{
+                font-size: 20px;
+            }
+            .tnc{
+                display: flex;
+                font-size: 14px;
+                justify-content: space-around;
+            }
+            .tnc a{
+                text-decoration: none;
+                color: goldenrod;
+            }
+            .copyright{
+                font-size: 14px;
+            }
+        }
+
+        
+        @media screen and (max-width:900px) and (min-width:550px) {
+            html{
+                background-image: url(wallpaperflare.com_wallpaper.jpg);
+            }
+            #nav1{
+                text-decoration: none;
+                display: block;
+                position: sticky;
+                top: 0;
+                background: rgba(43, 84, 82, 0.9);
+                padding: 6px;
+                justify-content: space-between;
+            }
+            .navigation{
+                display: flex;
+                justify-content: space-between;
+            }
+            .cinemalogo{
+                padding-left: 20px;
+                font-size: 21px;
+                text-shadow: 2px 2px 5px rgb(2, 188, 255), 1px 1px 20px rgb(112, 253, 255), 1px 1px 3px rgb(247, 8, 8);
+                color: rgb(255, 242, 0);
+            }
+            .dropdownbtn{
+                display: none;
+            }
+            .allnavbutton{
+                min-width: 160px;
+            }
+            .allnavbutton a{
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .navbuttons{
+                display: flex;
+            }
+            .navbuttons a{
+                color: goldenrod;
+                text-decoration: none;
+                padding: 15px 15px;
+            } 
+
+            .loginsignup{
+                font-size: 20px;
+                font-weight: bolder;
+                padding-left: 200px;
+            }
+        
+            .loginsignup :hover{
+                background: transparent;
+            }
+            .loginsignup button{
+                background-color: black;
+                border: 1px solid white;
+                border-radius: 18px;
+                color: goldenrod;
+                text-decoration: none;
+                margin: -70%;
+                padding: 30%;
+                font-style: normal;
+                font-size: 15px;
+            }
+
+
+            #movie_list{
+                padding: 2px;
+                margin-top: 10px;
+                background: rgba(43, 84, 82, 0.9);
+            }
+            .moviebox_phone{
+                display: flex;
+            }
+            .overlay1{
+                display: none;
+            }
+            .moviebox img{
+                margin: 10px;
+                margin-left: 30%;
+                width: 300px;
+                height: 450px;
+                border-radius: 12px;
+            }
+
+
+            #footer{
+                border: 1px solid white;
+                margin-top: 30px;
+                padding: 10px;
+                color: white;
+                background-color: black;
+            }
+            .tabdisfooter1{
+                display: flex;
+            }
+            .tabdisfooter2{
+                display: flex;
+            }
+            .xtranavbar a{
+                margin: 30px;
+                display: block;
+                color: goldenrod;
+                text-decoration: none;
+            }
+            .ads{
+                margin-left: 300px;
+            }
+
+            .ads img{
+                height: 200px;
+            }
+            .address{
+                font-size: 14px;
+            }
+            .interactions{
+                margin-left: 300px;
+                margin-top: 20px;
+            }
+            .apps i{
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            .medias i{
+                font-size: 20px;
+            }
+            .tnc{
+                display: flex;
+                font-size: 14px;
+                justify-content: space-around;
+            }
+            .tnc a{
+                text-decoration: none;
+                color: goldenrod;
+            }
+            .copyright{
+                font-size: 14px;
+            }
+           
+        }
+
+
+        @media screen and (max-width:1500px) and (min-width:900px) {
+            html{
+                background-image: url(wallpaperflare.com_wallpaper.jpg);
+            }
+            #nav1{
+                text-decoration: none;
+                display: flex;
+                position: sticky;
+                top: 0;
+                background: rgba(43, 84, 82, 0.9);
+                padding: 6px;
+                justify-content: space-between;
+            }
+            .navigation{
+                display: flex;
+                justify-content: space-between;
+            }
+            .cinemalogo{
+                margin-top: 30px;
+                padding-left: 80px;
+                font-size: 21px;
+                text-shadow: 2px 2px 5px rgb(2, 188, 255), 1px 1px 20px rgb(112, 253, 255), 1px 1px 3px rgb(247, 8, 8);
+                color: rgb(255, 242, 0);
+            }
+            .dropdownbtn{
+                display: none;
+            }
+            .allnavbutton{
+                min-width: 160px;
+            }
+            .allnavbutton a{
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .navbuttons{
+                margin-top: 70px;
+                display: flex;
+            }
+            .navbuttons a{
+                border: 1px solid black;
+                border-radius: 12px;
+                background-color: rgb(47, 46, 46);
+                margin: 5px;
+                margin-left: 30px;
+                color: goldenrod;
+                font-size: 25px;
+                text-decoration: none;
+                padding: 15px 15px;
+            }
+            .navbuttons a:hover {
+                background: transparent;
+            }
+
+            .loginsignup{
+                margin-top: 70px;
+                font-size: 20px;
+                font-weight: bolder;
+                padding-left: 100px;
+            }
+        
+            .loginsignup :hover{
+                background: transparent;
+            }
+            .loginsignup button{
+                background-color: black;
+                border: 1px solid white;
+                border-radius: 18px;
+                color: goldenrod;
+                text-decoration: none;
+                font-style: normal;
+                font-size: 15px;
+                padding: 25px 25px;
+            }
+
+            #movie_list{
+                padding: 2px;
+                margin-top: 10px;
+                background: rgba(43, 84, 82, 0.9);
+            }
+           .movierow{
+            display: flex;
+            }
+           .overlay1{
+            display: none;
+            }
+           .moviebox img{
+                margin: 10px;
+                margin-left: 20px;
+                width: 280px;
+                height: 450px;
+                border-radius: 12px;
+            }
+            .moviebox_phone{
+                display: flex;
+            }
+
+
+            #footer{
+                border: 1px solid white;
+                margin-top: 30px;
+                padding: 10px;
+                color: white;
+                background-color: black;
+            }
+            .footerfirst{
+                display: flex;
+            }
+            .xtranavbar a{
+                margin: 30px;
+                display: block;
+                color: goldenrod;
+                text-decoration: none;
+            }
+            .tabdisfooter1{
+                display: flex;
+            }
+            .tabdisfooter2{
+                display: flex;
+            }
+            .ads{
+                margin-top: 20px;
+                margin-left: 100px;
+            }
+            .ads img{
+                height: 200px;
+            }
+            .address{
+                margin-top: 10px;
+                margin-left: 40px;
+                font-size: 20px;
+            }
+            .interactions{
+                margin-top: 30px;
+                margin-left: 100px;
+                font-size: 20px;
+            }
+            .apps i{
+                margin: 10px;
+                font-size: 25px;
+                
+            }
+            .medias{
+                margin-top: 40px;
+            }
+            .medias i{
+                margin: 10px;
+                font-size: 25px;
+            }
+            .tnc{
+                display: flex;
+                font-size: 14px;
+                justify-content: space-around;
+            }
+            .tnc a{
+                text-decoration: none;
+                color: goldenrod;
+            }
+            .copyright{
+                font-size: 14px;
+                margin-left: 380px;
+            }
+        }
+
+    </style>
+
+
+    <body>
+        <!-- Navigation Bar -->
+        <div id="nav1">
+            <div class="cinemalogo">
+                <h1>
+                    SuperStar <br> Cinema
+                </h1>
+            </div>
+
+            <div class="navigation">
+                <div class="dropdownbar">
+                    <button class="dropdownbtn"><i class="	fas fa-bars"></i></button>
+                    <div class="allnavbutton">
+                        <div class="navbuttons">
+                            <a href="cinema.html"> Home </a>
+                            <a href=""> Movie </a>
+                            <a href="Food_layout.html"> F&B </a>
+                            <a href="Event_layout.html"> Events </a>
+                            <a href="promotion.html"> Promotion </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loginsignup">
+                    <a href="adv_login.html"><button>Log in/Sign up</button></a>
+                </div> 
+            </div>
+        </div>
+
+        <!--Movie List-->
+        <div id="movie_list">
+            <div class="movierow">
+                <div class="moviebox_phone">
+                    <div class="moviebox"><a href=""><img src="meg2.jpg" alt="MEG2">
+                        <div class="overlay1">
+                            <h3>Meg 2: The Trench</h3>
+                            <p>Genre: Action</p>
+                            <p>Duration:1hour 53mins</p>
+                            <p>Language:English</p>
+                            <p>Subtitle: BM, Mandarin</p>
+                        </div>
+                    </div>
+                    <div class="moviebox"><a href=""><img src="blue_beetle_ver3.jpg" alt="Blue Beetle">
+                        <div></div>
+                    </div>
+                </div>
+                
+                <div class="moviebox_phone">
+                    <div class="moviebox"><a href=""><img src="heartofstone.jpg" alt="">
+                        <div></div>
+                    </div>
+                    <div class="moviebox"><a href=""><img src="oppenheimer.jpg" alt="">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movierow">
+                <div class="moviebox_phone">
+                    <div class="moviebox"><a href=""><img src="barbie.jpg" alt="">
+                        <div></div>
+                    </div>
+                    <div class="moviebox"><a href=""><img src="FastX.webp" alt="">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="moviebox_phone">
+                    <div class="moviebox"><a href=""><img src="themoon.jpg" alt="">
+                    <div></div>
+                    </div>
+                    <div class="moviebox"><a href=""><img src="Indiana-Jones-.jpeg" alt="">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+
+        <!--Footer-->
+        <div id="footer">
+            <div class="footerfirst">
+                <div class="tabdisfooter1">
+                    <div class="xtranavbar">
+                        <a href=""> Promotion </a>
+                        <a href=""> Rewards </a>
+                        <a href=""> Cinemas </a>
+                        <a href=""> Specials </a>
+                        <a href=""> FAQs </a>
+                        
+                    </div>
+                    <div class="ads"><img src="tgv.jpg" alt="advertisement"></div>
+                    <div class="specialrewards"><i></i></div>
+                </div>
+                <div class="tabdisfooter2">
+                    <div class="address">
+                        <h3>SuperStar Cinemas</h3>
+                        <p>195901000261 (3609-M)<br> 1, Jalan SS 22/19,<br> Damansara Jaya, 47400 Petaling Jaya,<br> Selangor, Malaysia</p>
+                    </div>
+                    <div class="interactions">
+                        <div class="apps">
+                            <div>Download Our App</div>
+                            <i class="fab fa-google-play"></i>
+                            <i class="fab fa-app-store-ios"></i>
+                        </div>
+                        <div class="medias">
+                            <div class="socialmedia">Follow Us On</div>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <hr>
+            <div class="tnccopyright">
+                <div class="tnc">
+                    <a href=""> Terms & Conditions </a>
+                    <a href=""> Privacy Policy </a>
+                    <a href=""> ABAC Policy </a>
+                    <a href=""> Whistleblowing Policy </a>
+                </div>
+                <div class="copyright">
+                    <p>© Copyright 2023 Super Star Cinemas 195901000261 (3609-M). All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+</html>

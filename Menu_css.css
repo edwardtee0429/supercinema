@@ -1,0 +1,512 @@
+@media only screen and (max-width: 540px){
+    body{
+        background-image: url(background_image.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding:10px;
+    }
+
+    #nav1{
+        text-decoration: none;
+        display: block;
+        position: sticky;
+        top: 0;
+        background: rgba(43, 84, 82, 0.9);
+        padding: 6px;
+        justify-content: space-between;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cinemalogo{
+        padding-left: 20px;
+        font-size: 21px;
+        text-shadow: 2px 2px 5px rgb(2, 188, 255), 1px 1px 20px rgb(112, 253, 255), 1px 1px 3px rgb(247, 8, 8);
+        color: rgb(255, 242, 0);
+    }
+    .dropdownbtn{
+        background-color: black;
+        border: 3px solid gold;
+        color: goldenrod;
+        margin-left: 10px;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 18px;
+    }
+    .allnavbutton{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .allnavbutton a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .allnavbutton a:hover {background: rgba(66,54, 43,.9);}
+
+    .dropdownbar:hover .allnavbutton {display: block;}
+
+    .dropdownbar:hover .dropdownbtn {background: transparent;}
+
+    .loginsignup{
+        display: none;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 350px; 
+    }
+    .loginsignup :hover{
+        background: transparent;
+    }
+    .loginsignup button{
+        background-color: black;
+        border: 3px solid gold;
+        border-radius: 18px;
+        color: goldenrod;
+        width: 150px;
+        height: 50px;
+        margin-left: -70%;
+        text-decoration: none;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    .container_div{
+        margin: 5px;
+    }
+
+    .content_div{
+        background-color: rgb(55, 54, 54);
+        align-items: center;
+    }
+
+    .image_div {
+        margin-left: 145px;
+        padding-top: 30px;
+    }
+
+    img{
+        width:180px;
+    }
+    
+    .text_div{
+        margin-top: 30px;
+        margin-left: 20px;
+        color: white;
+    }
+    .price_div{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    button{
+        border: 1px solid white;
+        background-color:rgb(55, 54, 54);
+        color: white;
+        font-size: 40px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-left: 380px;
+    }
+
+    #footer{
+        border: 1px solid white;
+        margin-top: 30px;
+        padding: 10px;
+        color: white;
+        background-color: black;
+    }
+    
+    .footerfirst{
+        flex-direction: column;
+    }
+    .xtranavbar a{
+        margin: 10px;
+        display: block;
+        color: goldenrod;
+        text-decoration: none;
+    }
+    .address{
+        font-size: 14px;
+    }
+    .apps i{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .ads img{
+        height: 200px;
+    }
+    .medias i{
+        font-size: 20px;
+    }
+    .tnc{
+        display: flex;
+        font-size: 14px;
+        justify-content: space-around;
+    }
+    .tnc a{
+        text-decoration: none;
+        color: goldenrod;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:900px) and (min-width: 550px){
+    body{
+        background-image: url(background_image.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding:10px;
+    }
+
+    #nav1{
+        text-decoration: none;
+        display: block;
+        position: sticky;
+        top: 0;
+        background: rgba(43, 84, 82, 0.9);
+        padding: 6px;
+        justify-content: space-between;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cinemalogo{
+        padding-left: 20px;
+        font-size: 21px;
+        text-shadow: 2px 2px 5px rgb(2, 188, 255), 1px 1px 20px rgb(112, 253, 255), 1px 1px 3px rgb(247, 8, 8);
+        color: rgb(255, 242, 0);
+    }
+    .dropdownbtn{
+        display: none;
+    }
+    .allnavbutton{
+        min-width: 160px;
+    }
+    .allnavbutton a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .navbuttons{
+        display: flex;
+    }
+    .navbuttons a{
+        color: goldenrod;
+        text-decoration: none;
+        padding: 15px 15px;
+    } 
+
+    .loginsignup{
+        display: none;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 200px;
+    }
+
+    .loginsignup :hover{
+        background: transparent;
+    }
+    .loginsignup button{
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 18px;
+        color: goldenrod;
+        text-decoration: none;
+        margin: -70%;
+        padding: 30%;
+        font-style: normal;
+        font-size: 15px;
+    }
+    .container_div{
+        margin: 5px;
+    }
+    .content_div{
+        background-color: rgb(55, 54, 54);
+        display:flex;
+    }
+
+    .image_div {
+        margin-left: 20px;
+        padding-top: 30px;
+    }
+
+    img{
+        width:180px;
+    }
+    
+    .text_div{
+        margin-top: 30px;
+        margin-left: 20px;
+        color: white;
+        width: 800px;
+    }
+
+    .price_div{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    button{
+        border: 1px solid white;
+        background-color:rgb(55, 54, 54);
+        color: white;
+        font-size: 40px;
+        border-radius: 50%;
+        width: 90px;
+        cursor: pointer;
+        margin-top:300px;
+    }
+
+    #footer{
+        border: 1px solid white;
+        margin-top: 30px;
+        padding: 10px;
+        color: white;
+        background-color: black;
+    }
+    .tabdisfooter1{
+        display: flex;
+    }
+    .tabdisfooter2{
+        display: flex;
+    }
+    .xtranavbar a{
+        margin: 30px;
+        display: block;
+        color: goldenrod;
+        text-decoration: none;
+    }
+    .ads{
+        margin-left: 300px;
+    }
+
+    .ads img{
+        height: 200px;
+    }
+    .address{
+        font-size: 14px;
+    }
+    .interactions{
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+    .apps i{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .medias i{
+        font-size: 20px;
+    }
+    .tnc{
+        display: flex;
+        font-size: 14px;
+        justify-content: space-around;
+    }
+    .tnc a{
+        text-decoration: none;
+        color: goldenrod;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:1600px) and (min-width: 900px){
+    body{
+        background-image: url(background_image.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+    }
+
+    #nav1{
+        text-decoration: none;
+        display: flex;
+        position: sticky;
+        top: 0;
+        background: rgba(43, 84, 82, 0.9);
+        padding: 6px;
+        justify-content: space-between;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cinemalogo{
+        margin-top: 30px;
+        padding-left: 20px;
+        font-size: 21px;
+        text-shadow: 2px 2px 5px rgb(2, 188, 255), 1px 1px 20px rgb(112, 253, 255), 1px 1px 3px rgb(247, 8, 8);
+        color: rgb(255, 242, 0);
+    }
+    .dropdownbtn{
+        display: none;
+    }
+    .allnavbutton{
+        min-width: 160px;
+    }
+    .allnavbutton a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .navbuttons{
+        margin-top: 70px;
+        display: flex;
+    }
+    .navbuttons a{
+        border: 1px solid black;
+        border-radius: 12px;
+        background-color: rgb(47, 46, 46);
+        margin: 5px;
+        margin-left: 30px;
+        color: goldenrod;
+        font-size: 25px;
+        text-decoration: none;
+        padding: 15px 15px;
+    }
+    .navbuttons a:hover {
+        background: transparent;
+    }
+
+    .loginsignup{
+        display: none;
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 50px;
+    }
+
+    .loginsignup :hover{
+        background: transparent;
+    }
+    .loginsignup button{
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 18px;
+        color: goldenrod;
+        text-decoration: none;
+        font-style: normal;
+        font-size: 15px;
+        padding: 25px 25px;
+    }
+
+    .container_div{
+        margin: 5px;
+    }
+    .content_div{
+        background-color: rgb(55, 54, 54);
+        display:flex;
+    }
+
+    .image_div {
+        margin-left: 20px;
+        padding-top: 30px;
+    }
+
+    img{
+        width:180px;
+    }
+    
+    .text_div{
+        margin-top: 30px;
+        margin-left: 20px;
+        color: white;
+        width: 800px;
+    }
+
+    .price_div{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    button{
+        border: 1px solid white;
+        background-color:rgb(55, 54, 54);
+        color: white;
+        font-size: 40px;
+        border-radius: 50%;
+        width: 90px;
+        cursor: pointer;
+        margin-left: 500px;
+        margin-top:300px;
+    }
+
+    #footer{
+        border: 1px solid white;
+        margin-top: 30px;
+        padding: 10px;
+        color: white;
+        background-color: black;
+    }
+    .footerfirst{
+        display: flex;
+    }
+    .xtranavbar a{
+        margin: 30px;
+        display: block;
+        color: goldenrod;
+        text-decoration: none;
+    }
+    .tabdisfooter1{
+        display: flex;
+    }
+    .tabdisfooter2{
+        display: flex;
+    }
+    .ads{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    .ads img{
+        height: 200px;
+    }
+    .address{
+        margin-top: 10px;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    .interactions{
+        margin-top: 30px;
+        margin-left: 100px;
+        font-size: 20px;
+    }
+    .apps i{
+        margin: 10px;
+        font-size: 25px;
+        
+    }
+    .medias{
+        margin-top: 40px;
+    }
+    .medias i{
+        margin: 10px;
+        font-size: 25px;
+    }
+    .tnc{
+        display: flex;
+        font-size: 14px;
+        justify-content: space-around;
+    }
+    .tnc a{
+        text-decoration: none;
+        color: goldenrod;
+    }
+    .copyright{
+        font-size: 14px;
+        margin-left: 380px;
+    }
+}
